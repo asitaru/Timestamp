@@ -1,0 +1,26 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "A microservice that can take URL strings and check whether they contain unix/natural language dates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asitaru/Timestamp.git"
+  },
+  "keywords": [
+    "timestamp",
+    "date"
+  ],
+  "author": "Andrei Sitaru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asitaru/Timestamp/issues"
+  },
+  "homepage": "https://github.com/asitaru/Timestamp#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
