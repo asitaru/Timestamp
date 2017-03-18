@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/asitaru/Timestamp#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "moment": "^2.17.1"
   }
 }
