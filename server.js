@@ -3,7 +3,8 @@ var moment = require('moment');
 
 var app = express();
 
-app.use(express.static(__dirname + '/app'));
+app.use('/app', express.static(__dirname + "/app"));
+app.use('/node_modules', express.static(__dirname + "/node_modules"));
 
 app.use('/:str', (req,res)=>{
 
