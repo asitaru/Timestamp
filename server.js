@@ -3,6 +3,8 @@ var moment = require('moment');
 
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use('/app', express.static(__dirname + "/app"));
 app.use('/node_modules', express.static(__dirname + "/node_modules"));
 
@@ -36,6 +38,6 @@ app.use('/', (req,res) =>{
     res.sendFile('/home/andrei/fcc/timestampMicroservice/index.html');
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log('Listening on port 3000!')
+app.listen(app.get('port'), () => {
+    console.log('App is running on port', app.get('port'))
 });
