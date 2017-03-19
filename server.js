@@ -5,6 +5,7 @@ var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
+app.use('/', express.static(__dirname ));
 app.use('/app', express.static(__dirname + "/app"));
 app.use('/node_modules', express.static(__dirname + "/node_modules"));
 
@@ -35,7 +36,7 @@ app.use('/:str', (req,res)=>{
 });
 
 app.use('/', (req,res) =>{
-    res.sendFile('/home/andrei/fcc/timestampMicroservice/index.html');
+    res.sendFile('index.html');
 });
 
 app.listen(app.get('port'), () => {
